@@ -66,6 +66,17 @@
       border-bottom: 1px solid #e5edf6;
     }
 
+    .profile-img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 14px;
+      border: 3px solid #e2e8f0;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+      background: #ffffff;
+    }
+
     .hero h1 {
       margin: 0;
       font-size: 3rem;
@@ -176,6 +187,23 @@
       line-height: 1.7;
     }
 
+    .visitor-counter {
+      margin-bottom: 10px;
+      color: #475569;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .visitor-counter img {
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+    }
+
     @media (max-width: 768px) {
       body {
         padding: 20px 10px;
@@ -197,6 +225,11 @@
       .hero p {
         font-size: 0.98rem;
         line-height: 1.65;
+      }
+
+      .profile-img {
+        width: 82px;
+        height: 82px;
       }
 
       .section-header {
@@ -244,6 +277,11 @@
         margin-top: 10px;
       }
 
+      .profile-img {
+        width: 72px;
+        height: 72px;
+      }
+
       .section-card {
         margin-top: 12px;
         border-radius: 13px;
@@ -266,7 +304,8 @@
 
       .section-body p,
       .connect-item,
-      .footer-note {
+      .footer-note,
+      .visitor-counter {
         font-size: 0.9rem;
       }
 
@@ -284,6 +323,11 @@
 
     <div class="hub-shell">
       <div class="hero">
+        <img
+          src="https://raw.githubusercontent.com/bashoori/portfolio/main/docs/images/profile_resized.jpg"
+          alt="Bita Ashoori"
+          class="profile-img"
+        />
         <h1>Bita Digital Hub</h1>
         <p>Building reliable data systems for real-world use.</p>
         <p class="subtle">Focused on pipelines, lakehouse architecture, and production data reliability.</p>
@@ -371,6 +415,13 @@
       </div>
 
       <div class="footer-note">
+        <div class="visitor-counter">
+          <span>👀 Visitors:</span>
+          <img
+            src="https://komarev.com/ghpvc/?username=bita-digital-hub&label=views&color=0e75b6&style=flat"
+            alt="visitor counter"
+          />
+        </div>
         This is not a traditional portfolio.<br />
         It is a live hub for what I am building, learning, and sharing.
       </div>
