@@ -167,6 +167,9 @@
     }
 
     .connect-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       padding: 10px 12px;
       border: 1px solid #dce6f1;
       border-radius: 10px;
@@ -175,6 +178,37 @@
       line-height: 1.65;
       overflow-wrap: anywhere;
       word-break: break-word;
+    }
+
+    .connect-item span:last-child {
+      min-width: 0;
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+
+    .icon.github {
+      color: #111827;
+    }
+
+    .icon.linkedin {
+      color: #0a66c2;
+    }
+
+    .icon.web {
+      color: #2563eb;
     }
 
     .footer-note {
@@ -247,6 +281,12 @@
         font-size: 0.95rem;
       }
 
+      .icon,
+      .icon svg {
+        width: 20px;
+        height: 20px;
+      }
+
       .footer-note {
         font-size: 0.9rem;
       }
@@ -311,6 +351,13 @@
 
       .connect-item {
         padding: 10px;
+        align-items: flex-start;
+      }
+
+      .icon,
+      .icon svg {
+        width: 19px;
+        height: 19px;
       }
     }
   </style>
@@ -391,13 +438,30 @@
         <div class="section-body">
           <div class="connect-list">
             <div class="connect-item">
-              GitHub → <a href="https://github.com/bashoori">github.com/bashoori</a>
+              <span class="icon github" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.54-3.87-1.54-.52-1.31-1.28-1.66-1.28-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.14 1.18a10.9 10.9 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.62 1.6.23 2.78.11 3.07.73.8 1.18 1.83 1.18 3.08 0 4.38-2.69 5.34-5.25 5.63.41.35.77 1.04.77 2.1v3.12c0 .31.21.66.8.55A10.99 10.99 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+                </svg>
+              </span>
+              <span>GitHub → <a href="https://github.com/bashoori">github.com/bashoori</a></span>
             </div>
+
             <div class="connect-item">
-              LinkedIn → <a href="https://www.linkedin.com/in/bitaashoori/">linkedin.com/in/bitaashoori</a>
+              <span class="icon linkedin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.12 1 2.49 1s2.49 1.12 2.49 2.5zM.21 8.98h4.56V24H.21zM7.98 8.98h4.37v2.05h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.48 3.04 5.48 6.99V24h-4.56v-7.59c0-1.81-.03-4.13-2.52-4.13-2.52 0-2.91 1.97-2.91 4v7.72H7.98z"/>
+                </svg>
+              </span>
+              <span>LinkedIn → <a href="https://www.linkedin.com/in/bitaashoori/">linkedin.com/in/bitaashoori</a></span>
             </div>
+
             <div class="connect-item">
-              Website → <a href="https://bitadigitalhub.com">bitadigitalhub.com</a>
+              <span class="icon web" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-2.83-.48-5.06-2.71-5.54-5.54H11v5.54zM11 13H5.07c.2-2.28 1.64-4.22 3.73-5.2A15.93 15.93 0 0 0 11 13zm2 6.93V13h4.93c-.48 2.83-2.71 5.06-5.54 5.54zM13 11V4.07c2.83.48 5.06 2.71 5.54 5.54H13zm-2-6.93V11H6.07c.48-2.83 2.71-5.06 5.54-5.54z"/>
+                </svg>
+              </span>
+              <span>Website → <a href="https://bitadigitalhub.com">bitadigitalhub.com</a></span>
             </div>
           </div>
         </div>
